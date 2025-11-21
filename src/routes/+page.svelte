@@ -1,13 +1,21 @@
 <script>
 
-   import DeepReactivity from "$lib/components/DeepReactivity.svelte";
+      import Notifications from "$lib/components/Notifications.svelte";
+
+
+
 
 
 
 
 </script>
 
-<DeepReactivity />
+
+<Notifications>Notifications</Notifications>
+
+
+
+
 
 <style>
 	:global{
