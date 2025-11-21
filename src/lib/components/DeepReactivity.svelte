@@ -1,5 +1,9 @@
 
 <script>
+    // ---------------------Parent Component --------------------------------
+    // import DeepReactivity from "$lib/components/DeepReactivity.svelte";
+    // <DeepReactivity />
+    // ---------------------Parent Component End ----------------------------
 
     let array = $state([1,2,3,4])
 
@@ -36,8 +40,9 @@
 
     $effect(()=>{
         console.log('array');
-        console.log(array)
+        console.log(array)   // this is a proxy it gives wraning when you log to the console
     })
+    // $inspect(array).with(console.trace)
 
     $effect(()=>{
         console.log("array.length")
@@ -62,8 +67,9 @@
 <input bind:value={object.address.street} />
 <p>{array}</p>
 <button
- onClick={()=>{
+ onclick={()=>{
     array.push(Math.floor(Math.random()*10))
+    // array = [...array,Math.floor(Math.random()*10)]
  }}
 >
     Add to Array
