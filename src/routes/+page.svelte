@@ -1,19 +1,15 @@
 <script>
-
-      import Notifications from "$lib/components/Notifications.svelte";
-
-
-
-
+	import DoubleClickCounter from "$lib/components/doubleClickCounter.svelte";
+	import SingleClickCounter from "$lib/components/singleClickCounter.svelte";
 
 
 
 </script>
 
 
-<Notifications>Notifications</Notifications>
+<SingleClickCounter/>
 
-
+<DoubleClickCounter/>
 
 
 
@@ -24,4 +20,5 @@
 			color:#fff;
 		}
 	}
+	
 </style>

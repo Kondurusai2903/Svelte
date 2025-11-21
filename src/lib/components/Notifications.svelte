@@ -1,4 +1,8 @@
 <script>
+
+    // -------------------------Parent Component -------------------------
+    // import Notifications from "$lib/components/Notifications.svelte";
+    // <Notifications>Notifications</Notifications>
     import generateNotification from "$lib/utils/general-notification";
 
     let { children } = $props()
