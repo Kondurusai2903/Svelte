@@ -106,7 +106,7 @@ let count = $state({value : 0})
 
 $effect.root(() => {
     $effect(() => {
-        console.log(this.value,"re-running.....")
+        console.log(this.value)
     })
 }) 
 
